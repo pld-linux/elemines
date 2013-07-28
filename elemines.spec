@@ -9,7 +9,7 @@ Summary:	Elemines - EFL minesweeper clone
 Summary(pl.UTF-8):	Elemines - klon sapera oparty na EFL
 Name:		elemines
 Version:	0.2.3
-Release:	1
+Release:	2
 License:	BSD-like (code), GPL v2+ (some artwork) and SIL OFL (fonts)
 Group:		Libraries
 Source0:	http://download.enlightenment.org/releases/%{name}-%{version}.tar.bz2
@@ -66,6 +66,8 @@ rm -rf $RPM_BUILD_ROOT
 %{__rm} $RPM_BUILD_ROOT%{_libdir}/eleminesql.la
 # packaged as %doc
 %{__rm} -r $RPM_BUILD_ROOT%{_docdir}/elemines
+
+%{__mv} $RPM_BUILD_ROOT%{_localedir}/pt{_PT,}
 
 %find_lang %{name}
 
