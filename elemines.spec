@@ -17,7 +17,7 @@ Source0:	http://download.enlightenment.org/releases/%{name}-%{version}.tar.bz2
 URL:		http://enlightenment.org/
 BuildRequires:	autoconf >= 2.65
 BuildRequires:	automake >= 1:1.10
-BuildRequires:	gettext-devel >= 0.17
+BuildRequires:	gettext-tools >= 0.17
 BuildRequires:	libtool >= 2:2.2
 BuildRequires:	ecore-devel >= %{ecore_ver}
 BuildRequires:	edje >= %{edje_ver}
